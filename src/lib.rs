@@ -3,12 +3,16 @@ pub fn greet(name: &str) -> String {
 }
 
 
-pub mod register {
-    include!(concat!(env!("OUT_DIR"), "/register.rs"));
-}
-pub mod login {
-    include!(concat!(env!("OUT_DIR"), "/login.rs"));
-}
+// pub mod register {
+//     include!(concat!(env!("OUT_DIR"), "/register.rs"));
+// }
+// pub mod login {
+//     include!(concat!(env!("OUT_DIR"), "/login.rs"));
+// }
+// pub mod crm {
+//     include!(concat!(env!("OUT_DIR"), "/crm.rs"));
+// }
+
 pub mod crm {
-    include!(concat!(env!("OUT_DIR"), "/crm.rs"));
+    include!(concat!(env!("OUT_DIR"), "/myapp.rs"));
 }
