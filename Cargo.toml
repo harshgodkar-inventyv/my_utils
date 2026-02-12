@@ -12,7 +12,6 @@ path = "src/lib.rs"
 
 [dependencies]
 prost = "0.12"
-proto_schema = { git = "https://github.com/Dynamic-1001-GmbH/proto-schema-management.git", branch = "main" }
 
 [build-dependencies]
 prost-build = "0.12"
