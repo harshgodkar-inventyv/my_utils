@@ -11,3 +11,8 @@ path = "src/lib.rs"
 
 
 [dependencies]
+prost = "0.12"
+
+[build-dependencies]
+prost-build = "0.12"
+prost-validate-build = "0.2.9"

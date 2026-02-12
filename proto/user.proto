@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package register;
+
+message User {
+  optional int32 id = 1;
+  optional string name = 2;
+  optional string email = 3;
+  optional int32 age = 4;
+  optional string password = 5;
+}
+
