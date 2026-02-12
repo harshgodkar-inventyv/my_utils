@@ -10,7 +10,7 @@ fn main() {
         .protoc_arg("--experimental_allow_proto3_optional")
         .out_dir(std::env::var("OUT_DIR").unwrap())
         .compile_protos(
-            &["./proto/crm/user.proto", "./proto/login/hello.proto", "./proto/register/user.proto"],// Updated path
+            &["./proto/myapp/user.proto"],// Updated path
             &[proto_dir],            // Include path
         )
         .unwrap();
@@ -40,7 +40,7 @@ fn clone_proto_repo(repo_url: &str, target_dir: &str) {
     println!("cargo:warning=Proto repository cloned successfully");
  
     // Tell Cargo to rerun this build script if the proto directory changes
-    println!("cargo:rerun-if-changed={}", target_dir);
+    // println!("cargo:rerun-if-changed={}", target_dir);
 }
 
 
