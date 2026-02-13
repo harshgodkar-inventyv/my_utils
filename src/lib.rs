@@ -16,3 +16,7 @@ pub fn greet(name: &str) -> String {
 pub mod myapp {
     include!(concat!(env!("OUT_DIR"), "/myapp.rs"));
 }
+
+pub mod common {
+    include!(concat!(env!("OUT_DIR"), "/common.rs"));
+}
