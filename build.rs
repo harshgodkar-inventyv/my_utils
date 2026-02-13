@@ -42,27 +42,3 @@ fn clone_proto_repo(repo_url: &str, target_dir: &str) {
     // Tell Cargo to rerun this build script if the proto directory changes
     // println!("cargo:rerun-if-changed={}", target_dir);
 }
-
-
-
-
-
-
-// use std::env;
-// use std::path::PathBuf;
-
-// fn main() {
-//     let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
-
-//     let proto_path = PathBuf::from(&manifest_dir)
-//         .join("..") // adjust if needed
-//         .join("proto_schema") // crate name folder
-
-//     prost_build::compile_protos(
-//         &[
-//             proto_path.join("crm/user.proto"),
-//             proto_path.join("login/hello.proto"),
-//         ],
-//         &[proto_path],
-//     ).unwrap();
-// }
